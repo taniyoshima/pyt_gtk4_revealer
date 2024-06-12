@@ -1,0 +1,14 @@
+revealer1 {
+	font-size: 12pt;
+	color: black;
+	background-color:  rgb(248, 224, 193);
+}
+
+revealer2 {
+	font-size: 12pt;
+	color: black;
+	background-color:  rgb(248, 224, 193);
+	border-width: 1px;
+	border-color: rgb(255, 254, 207);
+	border-style: dashed;
+}

@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<!DOCTYPE cambalache-project SYSTEM "cambalache-project.dtd">
+<cambalache-project version="0.17.3" target_tk="gtk-4.0">
+  <ui>
+	(1,1,"ui_file.ui","ui_file.ui",None,None,None,None,None,None,None)
+  </ui>
+  <css>
+	(1,"ui_file.css",None,None)
+  </css>
+  <object>
+	(1,1,"GtkApplicationWindow","window",None,None,None,None,-1,None,None),
+	(1,2,"GtkBox",None,1,None,None,None,None,None,None),
+	(1,8,"GtkBox",None,2,None,None,None,-1,None,None),
+	(1,9,"GtkRevealer","revealer",2,None,None,None,1,None,None),
+	(1,10,"GtkBox",None,9,None,None,None,None,None,None),
+	(1,11,"GtkLabel",None,10,None,None,None,None,None,None),
+	(1,12,"GtkButton",None,10,None,None,None,1,None,None),
+	(1,13,"GtkLabel",None,8,None,None,None,-1,None,None),
+	(1,14,"GtkButton",None,8,None,None,None,1,None,None)
+  </object>
+  <object_property>
+	(1,1,"GtkWindow","default-height","110",None,None,None,None,None,None,None,None,None),
+	(1,1,"GtkWindow","default-width","400",None,None,None,None,None,None,None,None,None),
+	(1,1,"GtkWindow","title","pyt_gtk4_revealer",None,None,None,None,None,None,None,None,None),
+	(1,2,"GtkOrientable","orientation","vertical",None,None,None,None,None,None,None,None,None),
+	(1,8,"GtkWidget","height-request","30",None,None,None,None,None,None,None,None,None),
+	(1,8,"GtkWidget","hexpand","True",None,None,None,None,None,None,None,None,None),
+	(1,8,"GtkWidget","margin-bottom","20",None,None,None,None,None,None,None,None,None),
+	(1,8,"GtkWidget","margin-end","20",None,None,None,None,None,None,None,None,None),
+	(1,8,"GtkWidget","margin-start","20",None,None,None,None,None,None,None,None,None),
+	(1,8,"GtkWidget","margin-top","20",None,None,None,None,None,None,None,None,None),
+	(1,9,"GtkRevealer","transition-type","slide-up",None,None,None,None,None,None,None,None,None),
+	(1,9,"GtkWidget","css-name","revealer1",None,None,None,None,None,None,None,None,None),
+	(1,10,"GtkBox","spacing","6",None,None,None,None,None,None,None,None,None),
+	(1,11,"GtkLabel","label","「押す」ボタンを押しました。",None,None,None,None,None,None,None,None,None),
+	(1,11,"GtkWidget","hexpand","True",None,None,None,None,None,None,None,None,None),
+	(1,12,"GtkButton","label","OK",None,None,None,None,None,None,None,None,None),
+	(1,12,"GtkWidget","css-name","revealer2",None,None,None,None,None,None,None,None,None),
+	(1,12,"GtkWidget","height-request","35",None,None,None,None,None,None,None,None,None),
+	(1,12,"GtkWidget","margin-bottom","5",None,None,None,None,None,None,None,None,None),
+	(1,12,"GtkWidget","margin-end","5",None,None,None,None,None,None,None,None,None),
+	(1,12,"GtkWidget","margin-start","5",None,None,None,None,None,None,None,None,None),
+	(1,12,"GtkWidget","margin-top","5",None,None,None,None,None,None,None,None,None),
+	(1,12,"GtkWidget","width-request","85",None,None,None,None,None,None,None,None,None),
+	(1,13,"GtkLabel","label","Gtk.Revealerを表示する",None,None,None,None,None,None,None,None,None),
+	(1,13,"GtkLabel","xalign","0.0",None,None,None,None,None,None,None,None,None),
+	(1,13,"GtkWidget","hexpand","True",None,None,None,None,None,None,None,None,None),
+	(1,14,"GtkButton","label","押す",None,None,None,None,None,None,None,None,None)
+  </object_property>
+  <object_signal>
+	(1,1,14,"GtkButton","clicked","on_button_clicked",None,None,None,None,None),
+	(2,1,12,"GtkButton","clicked","on_revealer_button_clicked",None,None,None,None,None)
+  </object_signal>
+  <object_data>
+	(1,11,"GtkWidget",2,2,None,1,None,None,None,None)
+  </object_data>
+</cambalache-project>

@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- Created with Cambalache 0.90.2 -->
+<interface>
+  <!-- interface-name ui_file.ui -->
+  <requires lib="gtk" version="4.12"/>
+  <template class="window" parent="GtkApplicationWindow">
+    <property name="default-height">110</property>
+    <property name="default-width">400</property>
+    <property name="title">pyt_gtk4_revealer</property>
+    <child>
+      <object class="GtkBox">
+        <property name="orientation">vertical</property>
+        <child>
+          <object class="GtkBox">
+            <property name="height-request">30</property>
+            <property name="hexpand">True</property>
+            <property name="margin-bottom">20</property>
+            <property name="margin-end">20</property>
+            <property name="margin-start">20</property>
+            <property name="margin-top">20</property>
+            <child>
+              <object class="GtkLabel">
+                <property name="hexpand">True</property>
+                <property name="label">Gtk.Revealerを表示する</property>
+                <property name="xalign">0.0</property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkButton">
+                <property name="label">押す</property>
+                <signal name="clicked" handler="on_button_clicked"/>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="GtkRevealer" id="revealer">
+            <property name="css-name">revealer1</property>
+            <property name="transition-type">slide-up</property>
+            <child>
+              <object class="GtkBox">
+                <property name="spacing">6</property>
+                <child>
+                  <object class="GtkLabel">
+                    <property name="hexpand">True</property>
+                    <property name="label">「押す」ボタンを押しました。</property>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkButton">
+                    <property name="css-name">revealer2</property>
+                    <property name="height-request">35</property>
+                    <property name="label">OK</property>
+                    <property name="margin-bottom">5</property>
+                    <property name="margin-end">5</property>
+                    <property name="margin-start">5</property>
+                    <property name="margin-top">5</property>
+                    <property name="width-request">85</property>
+                    <signal name="clicked" handler="on_revealer_button_clicked"/>
+                  </object>
+                </child>
+              </object>
+            </child>
+          </object>
+        </child>
+      </object>
+    </child>
+  </template>
+</interface>
